@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+let emp='{"id":1,"name":"ram","sal":23456}';
+function show(){
+	let id=emp.id;
+	let name=emp.name;
+	let sal=emp.sal;
+	document.getElementById("f").innerHTML="id is"+id;
+	document.getElementById("g").innerHTML="Name is"+name;
+	document.getElementById("h").innerHTML="salary is"+sal;
+}
+</script>
+</head>
+<body>
+<input type="button" name="s" value="Show JSON data" style="width:400px;height:40px;" onclick="show()"/>
+<h1 id="f"></h1>
+<h1 id="g"></h1>
+<h1 id="h"></h1>
+</body>
+</html>
